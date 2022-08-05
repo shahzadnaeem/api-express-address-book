@@ -16,6 +16,15 @@ GET http://localhost:3030/contacts/666 HTTP/1.1
 
 ###
 
+POST http://localhost:3030/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+    "a": "contact..."
+}
+
+###
+
 # GET /missing
 
 GET http://localhost:3030/missing HTTP/1.1
