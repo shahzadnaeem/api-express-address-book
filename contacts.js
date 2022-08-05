@@ -27,9 +27,14 @@ const data = {
 
 const getContacts = () => data.contacts;
 const getContactById = (id) => data.contacts.find((c) => c.id === id);
+const createContact = (body) => {
+  console.log(`createContact: ${body}`);
+  return null;
+};
 
 module.exports = {
   data,
   getContacts,
   getContactById,
+  createContact,
 };
