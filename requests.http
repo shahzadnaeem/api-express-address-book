@@ -1,0 +1,23 @@
+# GET /contacts
+
+GET http://localhost:3030/contacts HTTP/1.1
+
+###
+
+# GET /contacts/{id} - exists
+
+GET http://localhost:3030/contacts/1 HTTP/1.1
+
+###
+
+# GET /contacts/{id} - non-existent
+
+GET http://localhost:3030/contacts/666 HTTP/1.1
+
+###
+
+# GET /missing
+
+GET http://localhost:3030/missing HTTP/1.1
+
+###
